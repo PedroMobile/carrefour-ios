@@ -1,0 +1,937 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09C3893936E7065FE7156A71 /* Pods_carrefour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F6EBEBD3211E23D8C481C7 /* Pods_carrefour.framework */; };
+		50290B6183BEC6827ABF6975 /* Pods_carrefour_carrefourUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208CA79C4A9707AB7949A5EF /* Pods_carrefour_carrefourUITests.framework */; };
+		74D44A520BBFCD648F967BE4 /* Pods_carrefourTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50DE040ACF32051DBADC6680 /* Pods_carrefourTests.framework */; };
+		FEC7DD772A4CF4C4003371D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DD762A4CF4C4003371D8 /* AppDelegate.swift */; };
+		FEC7DD792A4CF4C4003371D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DD782A4CF4C4003371D8 /* SceneDelegate.swift */; };
+		FEC7DD802A4CF4C6003371D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC7DD7F2A4CF4C6003371D8 /* Assets.xcassets */; };
+		FEC7DD832A4CF4C6003371D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEC7DD812A4CF4C6003371D8 /* LaunchScreen.storyboard */; };
+		FEC7DD8E2A4CF4C6003371D8 /* carrefourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DD8D2A4CF4C6003371D8 /* carrefourTests.swift */; };
+		FEC7DD982A4CF4C7003371D8 /* carrefourUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DD972A4CF4C7003371D8 /* carrefourUITests.swift */; };
+		FEC7DD9A2A4CF4C7003371D8 /* carrefourUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DD992A4CF4C7003371D8 /* carrefourUITestsLaunchTests.swift */; };
+		FEC7DDAA2A4CF6A2003371D8 /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDA92A4CF6A2003371D8 /* ViewCode.swift */; };
+		FEC7DDAF2A4D0A9A003371D8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDAE2A4D0A9A003371D8 /* HomeViewController.swift */; };
+		FEC7DDB12A4D0BF7003371D8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDB02A4D0BF7003371D8 /* HomeViewModel.swift */; };
+		FEC7DDB32A4D15EE003371D8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDB22A4D15EE003371D8 /* User.swift */; };
+		FEC7DDB52A4D16F0003371D8 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDB42A4D16F0003371D8 /* Repo.swift */; };
+		FEC7DDB72A4D1737003371D8 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDB62A4D1737003371D8 /* UserInfo.swift */; };
+		FEC7DDB92A4D1876003371D8 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDB82A4D1876003371D8 /* Owner.swift */; };
+		FEC7DDBB2A4D18CD003371D8 /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDBA2A4D18CD003371D8 /* License.swift */; };
+		FEC7DDBD2A4D1A43003371D8 /* ServiceURL+MicroServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDBC2A4D1A43003371D8 /* ServiceURL+MicroServices.swift */; };
+		FEC7DDBF2A4D1A69003371D8 /* NetworkingClient+MicroServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDBE2A4D1A69003371D8 /* NetworkingClient+MicroServices.swift */; };
+		FEC7DDC12A4D1AFE003371D8 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDC02A4D1AFE003371D8 /* Networking.swift */; };
+		FEC7DDC32A4D260F003371D8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDC22A4D260F003371D8 /* HomeView.swift */; };
+		FEC7DDC62A4D288C003371D8 /* CGFloat+AppTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDC52A4D288C003371D8 /* CGFloat+AppTokens.swift */; };
+		FEC7DDC82A4D2916003371D8 /* AppTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDC72A4D2916003371D8 /* AppTokens.swift */; };
+		FEC7DDCA2A4D296A003371D8 /* Int+CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDC92A4D296A003371D8 /* Int+CGFloat.swift */; };
+		FEC7DDDC2A4ED54F003371D8 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDDB2A4ED54F003371D8 /* UserTableViewCell.swift */; };
+		FEC7DDDE2A4F108F003371D8 /* AppSearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDDD2A4F108F003371D8 /* AppSearchField.swift */; };
+		FEC7DDE02A4F113D003371D8 /* UIColor+AppTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDDF2A4F113D003371D8 /* UIColor+AppTokens.swift */; };
+		FEC7DDE22A4F1208003371D8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDE12A4F1208003371D8 /* Constants.swift */; };
+		FEC7DDE42A4F1286003371D8 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDE32A4F1286003371D8 /* Resources.swift */; };
+		FEC7DDE62A4F12E9003371D8 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDE52A4F12E9003371D8 /* String+Localized.swift */; };
+		FEC7DDE92A4F1455003371D8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEC7DDE82A4F1455003371D8 /* Localizable.strings */; };
+		FEC7DDEB2A4F30E6003371D8 /* SearchUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDEA2A4F30E6003371D8 /* SearchUser.swift */; };
+		FEC7DDED2A4F558A003371D8 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDEC2A4F558A003371D8 /* UserViewController.swift */; };
+		FEC7DDEF2A4F5649003371D8 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDEE2A4F5649003371D8 /* UserViewModel.swift */; };
+		FEC7DDF12A4F5D00003371D8 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDF02A4F5D00003371D8 /* UserView.swift */; };
+		FEC7DDF32A4F6F36003371D8 /* ReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDF22A4F6F36003371D8 /* ReposViewController.swift */; };
+		FEC7DDF52A4F6F49003371D8 /* ReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDF42A4F6F49003371D8 /* ReposViewModel.swift */; };
+		FEC7DDF72A4F6F5E003371D8 /* ReposView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDF62A4F6F5E003371D8 /* ReposView.swift */; };
+		FEC7DDF92A4F72A0003371D8 /* AppTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDF82A4F72A0003371D8 /* AppTableViewCell.swift */; };
+		FEC7DDFC2A505B21003371D8 /* AppMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDFB2A505B21003371D8 /* AppMutableAttributedString.swift */; };
+		FEC7DDFE2A505D14003371D8 /* UserParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDFD2A505D14003371D8 /* UserParam.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEC7DD8A2A4CF4C6003371D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEC7DD6B2A4CF4C4003371D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEC7DD722A4CF4C4003371D8;
+			remoteInfo = carrefour;
+		};
+		FEC7DD942A4CF4C7003371D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEC7DD6B2A4CF4C4003371D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEC7DD722A4CF4C4003371D8;
+			remoteInfo = carrefour;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0637086BFD575FCB4FFDC065 /* Pods-carrefourTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-carrefourTests.debug.xcconfig"; path = "Target Support Files/Pods-carrefourTests/Pods-carrefourTests.debug.xcconfig"; sourceTree = "<group>"; };
+		208CA79C4A9707AB7949A5EF /* Pods_carrefour_carrefourUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_carrefour_carrefourUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3379AE46323F28AE18AD4A17 /* Pods-carrefour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-carrefour.debug.xcconfig"; path = "Target Support Files/Pods-carrefour/Pods-carrefour.debug.xcconfig"; sourceTree = "<group>"; };
+		50DE040ACF32051DBADC6680 /* Pods_carrefourTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_carrefourTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		546B3D7F3781917B6510538B /* Pods-carrefour-carrefourUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-carrefour-carrefourUITests.release.xcconfig"; path = "Target Support Files/Pods-carrefour-carrefourUITests/Pods-carrefour-carrefourUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A73869008DDA418DA7B09333 /* Pods-carrefour-carrefourUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-carrefour-carrefourUITests.debug.xcconfig"; path = "Target Support Files/Pods-carrefour-carrefourUITests/Pods-carrefour-carrefourUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B2F6EBEBD3211E23D8C481C7 /* Pods_carrefour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_carrefour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B61E3C20F530F037831650BD /* Pods-carrefour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-carrefour.release.xcconfig"; path = "Target Support Files/Pods-carrefour/Pods-carrefour.release.xcconfig"; sourceTree = "<group>"; };
+		BA19D048393C8CA662B5831B /* Pods-carrefourTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-carrefourTests.release.xcconfig"; path = "Target Support Files/Pods-carrefourTests/Pods-carrefourTests.release.xcconfig"; sourceTree = "<group>"; };
+		FEC7DD732A4CF4C4003371D8 /* carrefour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carrefour.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEC7DD762A4CF4C4003371D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FEC7DD782A4CF4C4003371D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FEC7DD7F2A4CF4C6003371D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEC7DD822A4CF4C6003371D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FEC7DD842A4CF4C6003371D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEC7DD892A4CF4C6003371D8 /* carrefourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = carrefourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEC7DD8D2A4CF4C6003371D8 /* carrefourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carrefourTests.swift; sourceTree = "<group>"; };
+		FEC7DD932A4CF4C7003371D8 /* carrefourUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = carrefourUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEC7DD972A4CF4C7003371D8 /* carrefourUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carrefourUITests.swift; sourceTree = "<group>"; };
+		FEC7DD992A4CF4C7003371D8 /* carrefourUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carrefourUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FEC7DDA92A4CF6A2003371D8 /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
+		FEC7DDAE2A4D0A9A003371D8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FEC7DDB02A4D0BF7003371D8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FEC7DDB22A4D15EE003371D8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FEC7DDB42A4D16F0003371D8 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		FEC7DDB62A4D1737003371D8 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		FEC7DDB82A4D1876003371D8 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		FEC7DDBA2A4D18CD003371D8 /* License.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
+		FEC7DDBC2A4D1A43003371D8 /* ServiceURL+MicroServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ServiceURL+MicroServices.swift"; sourceTree = "<group>"; };
+		FEC7DDBE2A4D1A69003371D8 /* NetworkingClient+MicroServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkingClient+MicroServices.swift"; sourceTree = "<group>"; };
+		FEC7DDC02A4D1AFE003371D8 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		FEC7DDC22A4D260F003371D8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FEC7DDC52A4D288C003371D8 /* CGFloat+AppTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+AppTokens.swift"; sourceTree = "<group>"; };
+		FEC7DDC72A4D2916003371D8 /* AppTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTokens.swift; sourceTree = "<group>"; };
+		FEC7DDC92A4D296A003371D8 /* Int+CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+CGFloat.swift"; sourceTree = "<group>"; };
+		FEC7DDDB2A4ED54F003371D8 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		FEC7DDDD2A4F108F003371D8 /* AppSearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSearchField.swift; sourceTree = "<group>"; };
+		FEC7DDDF2A4F113D003371D8 /* UIColor+AppTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppTokens.swift"; sourceTree = "<group>"; };
+		FEC7DDE12A4F1208003371D8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FEC7DDE32A4F1286003371D8 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		FEC7DDE52A4F12E9003371D8 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		FEC7DDE82A4F1455003371D8 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		FEC7DDEA2A4F30E6003371D8 /* SearchUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUser.swift; sourceTree = "<group>"; };
+		FEC7DDEC2A4F558A003371D8 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		FEC7DDEE2A4F5649003371D8 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		FEC7DDF02A4F5D00003371D8 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		FEC7DDF22A4F6F36003371D8 /* ReposViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewController.swift; sourceTree = "<group>"; };
+		FEC7DDF42A4F6F49003371D8 /* ReposViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewModel.swift; sourceTree = "<group>"; };
+		FEC7DDF62A4F6F5E003371D8 /* ReposView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposView.swift; sourceTree = "<group>"; };
+		FEC7DDF82A4F72A0003371D8 /* AppTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTableViewCell.swift; sourceTree = "<group>"; };
+		FEC7DDFB2A505B21003371D8 /* AppMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMutableAttributedString.swift; sourceTree = "<group>"; };
+		FEC7DDFD2A505D14003371D8 /* UserParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserParam.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEC7DD702A4CF4C4003371D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09C3893936E7065FE7156A71 /* Pods_carrefour.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEC7DD862A4CF4C6003371D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74D44A520BBFCD648F967BE4 /* Pods_carrefourTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEC7DD902A4CF4C7003371D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50290B6183BEC6827ABF6975 /* Pods_carrefour_carrefourUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93099A1F7EE4E87265324156 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2F6EBEBD3211E23D8C481C7 /* Pods_carrefour.framework */,
+				208CA79C4A9707AB7949A5EF /* Pods_carrefour_carrefourUITests.framework */,
+				50DE040ACF32051DBADC6680 /* Pods_carrefourTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE09AAD9B7B1589C2772A516 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3379AE46323F28AE18AD4A17 /* Pods-carrefour.debug.xcconfig */,
+				B61E3C20F530F037831650BD /* Pods-carrefour.release.xcconfig */,
+				A73869008DDA418DA7B09333 /* Pods-carrefour-carrefourUITests.debug.xcconfig */,
+				546B3D7F3781917B6510538B /* Pods-carrefour-carrefourUITests.release.xcconfig */,
+				0637086BFD575FCB4FFDC065 /* Pods-carrefourTests.debug.xcconfig */,
+				BA19D048393C8CA662B5831B /* Pods-carrefourTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FEC7DD6A2A4CF4C4003371D8 = {
+			isa = PBXGroup;
+			children = (
+				FEC7DD752A4CF4C4003371D8 /* carrefour */,
+				FEC7DD8C2A4CF4C6003371D8 /* carrefourTests */,
+				FEC7DD962A4CF4C7003371D8 /* carrefourUITests */,
+				FEC7DD742A4CF4C4003371D8 /* Products */,
+				BE09AAD9B7B1589C2772A516 /* Pods */,
+				93099A1F7EE4E87265324156 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FEC7DD742A4CF4C4003371D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEC7DD732A4CF4C4003371D8 /* carrefour.app */,
+				FEC7DD892A4CF4C6003371D8 /* carrefourTests.xctest */,
+				FEC7DD932A4CF4C7003371D8 /* carrefourUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEC7DD752A4CF4C4003371D8 /* carrefour */ = {
+			isa = PBXGroup;
+			children = (
+				FEC7DDE72A4F1324003371D8 /* Components */,
+				FEC7DDC42A4D2875003371D8 /* Extentions */,
+				FEC7DDA82A4CF61D003371D8 /* Domain */,
+				FEC7DDA72A4CF5FC003371D8 /* Network */,
+				FEC7DDA62A4CF5E9003371D8 /* Models */,
+				FEC7DD762A4CF4C4003371D8 /* AppDelegate.swift */,
+				FEC7DD782A4CF4C4003371D8 /* SceneDelegate.swift */,
+				FEC7DDE12A4F1208003371D8 /* Constants.swift */,
+				FEC7DDE82A4F1455003371D8 /* Localizable.strings */,
+				FEC7DD7F2A4CF4C6003371D8 /* Assets.xcassets */,
+				FEC7DD812A4CF4C6003371D8 /* LaunchScreen.storyboard */,
+				FEC7DD842A4CF4C6003371D8 /* Info.plist */,
+			);
+			path = carrefour;
+			sourceTree = "<group>";
+		};
+		FEC7DD8C2A4CF4C6003371D8 /* carrefourTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEC7DD8D2A4CF4C6003371D8 /* carrefourTests.swift */,
+			);
+			path = carrefourTests;
+			sourceTree = "<group>";
+		};
+		FEC7DD962A4CF4C7003371D8 /* carrefourUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FEC7DD972A4CF4C7003371D8 /* carrefourUITests.swift */,
+				FEC7DD992A4CF4C7003371D8 /* carrefourUITestsLaunchTests.swift */,
+			);
+			path = carrefourUITests;
+			sourceTree = "<group>";
+		};
+		FEC7DDA62A4CF5E9003371D8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FEC7DDA92A4CF6A2003371D8 /* ViewCode.swift */,
+				FEC7DDB22A4D15EE003371D8 /* User.swift */,
+				FEC7DDB42A4D16F0003371D8 /* Repo.swift */,
+				FEC7DDB62A4D1737003371D8 /* UserInfo.swift */,
+				FEC7DDB82A4D1876003371D8 /* Owner.swift */,
+				FEC7DDBA2A4D18CD003371D8 /* License.swift */,
+				FEC7DDEA2A4F30E6003371D8 /* SearchUser.swift */,
+				FEC7DDFD2A505D14003371D8 /* UserParam.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FEC7DDA72A4CF5FC003371D8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FEC7DDC02A4D1AFE003371D8 /* Networking.swift */,
+				FEC7DDBC2A4D1A43003371D8 /* ServiceURL+MicroServices.swift */,
+				FEC7DDBE2A4D1A69003371D8 /* NetworkingClient+MicroServices.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FEC7DDA82A4CF61D003371D8 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FEC7DDAD2A4CF704003371D8 /* Repos */,
+				FEC7DDAC2A4CF6DA003371D8 /* User */,
+				FEC7DDAB2A4CF6C3003371D8 /* Home */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FEC7DDAB2A4CF6C3003371D8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FEC7DDAE2A4D0A9A003371D8 /* HomeViewController.swift */,
+				FEC7DDB02A4D0BF7003371D8 /* HomeViewModel.swift */,
+				FEC7DDDA2A4ED4F5003371D8 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FEC7DDAC2A4CF6DA003371D8 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				FEC7DDEC2A4F558A003371D8 /* UserViewController.swift */,
+				FEC7DDEE2A4F5649003371D8 /* UserViewModel.swift */,
+				FEC7DDF02A4F5D00003371D8 /* UserView.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		FEC7DDAD2A4CF704003371D8 /* Repos */ = {
+			isa = PBXGroup;
+			children = (
+				FEC7DDF22A4F6F36003371D8 /* ReposViewController.swift */,
+				FEC7DDF42A4F6F49003371D8 /* ReposViewModel.swift */,
+				FEC7DDF62A4F6F5E003371D8 /* ReposView.swift */,
+			);
+			path = Repos;
+			sourceTree = "<group>";
+		};
+		FEC7DDC42A4D2875003371D8 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				FEC7DDC52A4D288C003371D8 /* CGFloat+AppTokens.swift */,
+				FEC7DDC72A4D2916003371D8 /* AppTokens.swift */,
+				FEC7DDC92A4D296A003371D8 /* Int+CGFloat.swift */,
+				FEC7DDDF2A4F113D003371D8 /* UIColor+AppTokens.swift */,
+				FEC7DDE32A4F1286003371D8 /* Resources.swift */,
+				FEC7DDE52A4F12E9003371D8 /* String+Localized.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		FEC7DDDA2A4ED4F5003371D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FEC7DDC22A4D260F003371D8 /* HomeView.swift */,
+				FEC7DDDB2A4ED54F003371D8 /* UserTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FEC7DDE72A4F1324003371D8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FEC7DDDD2A4F108F003371D8 /* AppSearchField.swift */,
+				FEC7DDF82A4F72A0003371D8 /* AppTableViewCell.swift */,
+				FEC7DDFB2A505B21003371D8 /* AppMutableAttributedString.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEC7DD722A4CF4C4003371D8 /* carrefour */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEC7DD9D2A4CF4C7003371D8 /* Build configuration list for PBXNativeTarget "carrefour" */;
+			buildPhases = (
+				3C66E13AF1F752F2523BA704 /* [CP] Check Pods Manifest.lock */,
+				FEC7DD6F2A4CF4C4003371D8 /* Sources */,
+				FEC7DD702A4CF4C4003371D8 /* Frameworks */,
+				FEC7DD712A4CF4C4003371D8 /* Resources */,
+				89F821ABBA921C85D092F5E5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = carrefour;
+			productName = carrefour;
+			productReference = FEC7DD732A4CF4C4003371D8 /* carrefour.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FEC7DD882A4CF4C6003371D8 /* carrefourTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEC7DDA02A4CF4C7003371D8 /* Build configuration list for PBXNativeTarget "carrefourTests" */;
+			buildPhases = (
+				8FEE150140275E86E8815C80 /* [CP] Check Pods Manifest.lock */,
+				FEC7DD852A4CF4C6003371D8 /* Sources */,
+				FEC7DD862A4CF4C6003371D8 /* Frameworks */,
+				FEC7DD872A4CF4C6003371D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEC7DD8B2A4CF4C6003371D8 /* PBXTargetDependency */,
+			);
+			name = carrefourTests;
+			productName = carrefourTests;
+			productReference = FEC7DD892A4CF4C6003371D8 /* carrefourTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FEC7DD922A4CF4C7003371D8 /* carrefourUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEC7DDA32A4CF4C7003371D8 /* Build configuration list for PBXNativeTarget "carrefourUITests" */;
+			buildPhases = (
+				97B5FE3BD8566417D599EADF /* [CP] Check Pods Manifest.lock */,
+				FEC7DD8F2A4CF4C7003371D8 /* Sources */,
+				FEC7DD902A4CF4C7003371D8 /* Frameworks */,
+				FEC7DD912A4CF4C7003371D8 /* Resources */,
+				A27591225413273D6032445B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEC7DD952A4CF4C7003371D8 /* PBXTargetDependency */,
+			);
+			name = carrefourUITests;
+			productName = carrefourUITests;
+			productReference = FEC7DD932A4CF4C7003371D8 /* carrefourUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEC7DD6B2A4CF4C4003371D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					FEC7DD722A4CF4C4003371D8 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					FEC7DD882A4CF4C6003371D8 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = FEC7DD722A4CF4C4003371D8;
+					};
+					FEC7DD922A4CF4C7003371D8 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = FEC7DD722A4CF4C4003371D8;
+					};
+				};
+			};
+			buildConfigurationList = FEC7DD6E2A4CF4C4003371D8 /* Build configuration list for PBXProject "carrefour" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEC7DD6A2A4CF4C4003371D8;
+			productRefGroup = FEC7DD742A4CF4C4003371D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEC7DD722A4CF4C4003371D8 /* carrefour */,
+				FEC7DD882A4CF4C6003371D8 /* carrefourTests */,
+				FEC7DD922A4CF4C7003371D8 /* carrefourUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEC7DD712A4CF4C4003371D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC7DD832A4CF4C6003371D8 /* LaunchScreen.storyboard in Resources */,
+				FEC7DDE92A4F1455003371D8 /* Localizable.strings in Resources */,
+				FEC7DD802A4CF4C6003371D8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEC7DD872A4CF4C6003371D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEC7DD912A4CF4C7003371D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C66E13AF1F752F2523BA704 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-carrefour-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89F821ABBA921C85D092F5E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-carrefour/Pods-carrefour-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-carrefour/Pods-carrefour-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-carrefour/Pods-carrefour-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FEE150140275E86E8815C80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-carrefourTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97B5FE3BD8566417D599EADF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-carrefour-carrefourUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A27591225413273D6032445B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-carrefour-carrefourUITests/Pods-carrefour-carrefourUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-carrefour-carrefourUITests/Pods-carrefour-carrefourUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-carrefour-carrefourUITests/Pods-carrefour-carrefourUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEC7DD6F2A4CF4C4003371D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC7DDF72A4F6F5E003371D8 /* ReposView.swift in Sources */,
+				FEC7DDF92A4F72A0003371D8 /* AppTableViewCell.swift in Sources */,
+				FEC7DDEB2A4F30E6003371D8 /* SearchUser.swift in Sources */,
+				FEC7DDAF2A4D0A9A003371D8 /* HomeViewController.swift in Sources */,
+				FEC7DDB12A4D0BF7003371D8 /* HomeViewModel.swift in Sources */,
+				FEC7DDFC2A505B21003371D8 /* AppMutableAttributedString.swift in Sources */,
+				FEC7DDC62A4D288C003371D8 /* CGFloat+AppTokens.swift in Sources */,
+				FEC7DDC32A4D260F003371D8 /* HomeView.swift in Sources */,
+				FEC7DDBF2A4D1A69003371D8 /* NetworkingClient+MicroServices.swift in Sources */,
+				FEC7DDCA2A4D296A003371D8 /* Int+CGFloat.swift in Sources */,
+				FEC7DDF52A4F6F49003371D8 /* ReposViewModel.swift in Sources */,
+				FEC7DDB92A4D1876003371D8 /* Owner.swift in Sources */,
+				FEC7DDB52A4D16F0003371D8 /* Repo.swift in Sources */,
+				FEC7DDEF2A4F5649003371D8 /* UserViewModel.swift in Sources */,
+				FEC7DD772A4CF4C4003371D8 /* AppDelegate.swift in Sources */,
+				FEC7DDDE2A4F108F003371D8 /* AppSearchField.swift in Sources */,
+				FEC7DDBD2A4D1A43003371D8 /* ServiceURL+MicroServices.swift in Sources */,
+				FEC7DDE22A4F1208003371D8 /* Constants.swift in Sources */,
+				FEC7DD792A4CF4C4003371D8 /* SceneDelegate.swift in Sources */,
+				FEC7DDFE2A505D14003371D8 /* UserParam.swift in Sources */,
+				FEC7DDDC2A4ED54F003371D8 /* UserTableViewCell.swift in Sources */,
+				FEC7DDAA2A4CF6A2003371D8 /* ViewCode.swift in Sources */,
+				FEC7DDE62A4F12E9003371D8 /* String+Localized.swift in Sources */,
+				FEC7DDB72A4D1737003371D8 /* UserInfo.swift in Sources */,
+				FEC7DDBB2A4D18CD003371D8 /* License.swift in Sources */,
+				FEC7DDB32A4D15EE003371D8 /* User.swift in Sources */,
+				FEC7DDC82A4D2916003371D8 /* AppTokens.swift in Sources */,
+				FEC7DDED2A4F558A003371D8 /* UserViewController.swift in Sources */,
+				FEC7DDE42A4F1286003371D8 /* Resources.swift in Sources */,
+				FEC7DDF32A4F6F36003371D8 /* ReposViewController.swift in Sources */,
+				FEC7DDE02A4F113D003371D8 /* UIColor+AppTokens.swift in Sources */,
+				FEC7DDF12A4F5D00003371D8 /* UserView.swift in Sources */,
+				FEC7DDC12A4D1AFE003371D8 /* Networking.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEC7DD852A4CF4C6003371D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC7DD8E2A4CF4C6003371D8 /* carrefourTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEC7DD8F2A4CF4C7003371D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC7DD9A2A4CF4C7003371D8 /* carrefourUITestsLaunchTests.swift in Sources */,
+				FEC7DD982A4CF4C7003371D8 /* carrefourUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FEC7DD8B2A4CF4C6003371D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEC7DD722A4CF4C4003371D8 /* carrefour */;
+			targetProxy = FEC7DD8A2A4CF4C6003371D8 /* PBXContainerItemProxy */;
+		};
+		FEC7DD952A4CF4C7003371D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEC7DD722A4CF4C4003371D8 /* carrefour */;
+			targetProxy = FEC7DD942A4CF4C7003371D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FEC7DD812A4CF4C6003371D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEC7DD822A4CF4C6003371D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEC7DD9B2A4CF4C7003371D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FEC7DD9C2A4CF4C7003371D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEC7DD9E2A4CF4C7003371D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3379AE46323F28AE18AD4A17 /* Pods-carrefour.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = carrefour/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wau.carrefour;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEC7DD9F2A4CF4C7003371D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B61E3C20F530F037831650BD /* Pods-carrefour.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = carrefour/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wau.carrefour;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FEC7DDA12A4CF4C7003371D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0637086BFD575FCB4FFDC065 /* Pods-carrefourTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wau.carrefourTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/carrefour.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/carrefour";
+			};
+			name = Debug;
+		};
+		FEC7DDA22A4CF4C7003371D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA19D048393C8CA662B5831B /* Pods-carrefourTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wau.carrefourTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/carrefour.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/carrefour";
+			};
+			name = Release;
+		};
+		FEC7DDA42A4CF4C7003371D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A73869008DDA418DA7B09333 /* Pods-carrefour-carrefourUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wau.carrefourUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = carrefour;
+			};
+			name = Debug;
+		};
+		FEC7DDA52A4CF4C7003371D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 546B3D7F3781917B6510538B /* Pods-carrefour-carrefourUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wau.carrefourUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = carrefour;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEC7DD6E2A4CF4C4003371D8 /* Build configuration list for PBXProject "carrefour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEC7DD9B2A4CF4C7003371D8 /* Debug */,
+				FEC7DD9C2A4CF4C7003371D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEC7DD9D2A4CF4C7003371D8 /* Build configuration list for PBXNativeTarget "carrefour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEC7DD9E2A4CF4C7003371D8 /* Debug */,
+				FEC7DD9F2A4CF4C7003371D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEC7DDA02A4CF4C7003371D8 /* Build configuration list for PBXNativeTarget "carrefourTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEC7DDA12A4CF4C7003371D8 /* Debug */,
+				FEC7DDA22A4CF4C7003371D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEC7DDA32A4CF4C7003371D8 /* Build configuration list for PBXNativeTarget "carrefourUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEC7DDA42A4CF4C7003371D8 /* Debug */,
+				FEC7DDA52A4CF4C7003371D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEC7DD6B2A4CF4C4003371D8 /* Project object */;
+}
