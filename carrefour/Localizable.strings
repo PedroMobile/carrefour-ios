@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  carrefour
+
+  Created by Pedro Sousa on 30/06/23.
+  
+*/
+
+// MARK:
+
+"home_search_text_field" = "Search";
+"repos_button" = "Repositórios";
+"repos_title" = "Repositórios";
