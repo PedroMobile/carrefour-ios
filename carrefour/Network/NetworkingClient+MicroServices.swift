@@ -62,16 +62,6 @@ final class Service {
                 completion(response.value?.items, nil)
             case let .failure(error):
                 completion(nil, error)
-                AF.request(url).responseString(completionHandler: { response in
-                    print("response: \(response)")
-                            switch response.result {
-                            case .success(let value):
-                                print("value**: \(value)")
-                                
-                            case .failure(let error):
-                                print(error)
-                            }
-                })
             }
         }
     }
