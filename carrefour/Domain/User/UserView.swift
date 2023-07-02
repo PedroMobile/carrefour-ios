@@ -132,17 +132,12 @@ class UserView: UIView, ViewCode {
     
     // MARK: Methods
     
-    func bind(user:UserInfo) {
-        setImage(for: user.avatarUrl)
-        nameLabel.text = user.login
-        tableView.reloadData()
+    func bindUserImage(imageURL: URL) {
+        userImageView.af.setImage(withURL: imageURL)
     }
     
-    private func setImage(for url: String?) {
-        guard let urlString = url, let imageURL = URL(string: urlString) else {
-            return
-        }
-        userImageView.af.setImage(withURL: imageURL)
+    func bindUserName(name: String) {
+        nameLabel.text = name
     }
     
     @objc func goToRepos() {

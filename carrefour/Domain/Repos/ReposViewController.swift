@@ -52,7 +52,7 @@ final class ReposViewController: UIViewController {
     
     private func setupBind() {
         
-        viewModel.bindRepos = { [weak self] users in
+        viewModel.bindRepos = { [weak self] in
             self?.mainView.tableView.reloadData()
         }
         

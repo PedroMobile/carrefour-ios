@@ -13,7 +13,8 @@ protocol UserViewModelProtocol {
     var showLoading: (() -> ())? { get set }
     var hideLoading: (() -> ())? { get set }
     var showMessage: ((String) -> ())? { get set }
-    var bindUser: ((UserInfo) -> ())? { get set }
+    var bindUserName: ((String) -> ())? { get set }
+    var bindUserImage: ((URL) -> ())? { get set }
     var bindUserParams: (() -> ())? { get set }
     func fetchUser()
     func goToReposPage()
@@ -22,20 +23,22 @@ protocol UserViewModelProtocol {
 final class UserViewModel: NSObject, UserViewModelProtocol {
     
     private var service = Service.shared
-    
+    weak var coordinator: AppCoordinator?
+    var username: String
     var showLoading: (() -> ())?
     var hideLoading: (() -> ())?
     var showMessage: ((String) -> ())?
-    var bindUser: ((UserInfo) -> ())?
+    var bindUserName: ((String) -> ())?
+    var bindUserImage: ((URL) -> ())?
     var bindUserParams: (() -> ())?
-    
-    var username: String
-    weak var coordinator : AppCoordinator?
     
     private var user:UserInfo? {
         didSet {
-            if let user = user {
-                bindUser?(user)
+            if let username = user?.login {
+                bindUserName?(username)
+            }
+            
+            if let urlString = user?.avatarUrl, let imageURL = URL(string: urlString) { bindUserImage?(imageURL)
             }
         }
     }

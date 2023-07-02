@@ -52,7 +52,7 @@ final class HomeViewController: UIViewController {
     
     private func setupBind() {
         
-        viewModel.bindUsers = { [weak self] users in
+        viewModel.bindUsers = { [weak self] in
             self?.mainView.reloadData()
         }
         

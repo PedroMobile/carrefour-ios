@@ -12,11 +12,10 @@ protocol HomeViewModelProtocol {
     var showLoading: (() -> ())? { get set }
     var hideLoading: (() -> ())? { get set }
     var showMessage: ((String) -> ())? { get set }
-    var bindUsers: (([User]) -> ())? { get set }
+    var bindUsers: (() -> ())? { get set }
     
     func fetchUsers()
     func searchUser(login:String)
-    var users:[User]? { get }
     func goToUserPage(row: Int)
 }
 
@@ -28,13 +27,11 @@ final class HomeViewModel: NSObject, HomeViewModelProtocol {
     var showLoading: (() -> ())?
     var hideLoading: (() -> ())?
     var showMessage: ((String) -> ())?
-    var bindUsers: (([User]) -> ())?
+    var bindUsers: (() -> ())?
     
     var users:[User]? {
         didSet {
-            if let users = users {
-                bindUsers?(users)
-            }
+            bindUsers?()
         }
     }
     

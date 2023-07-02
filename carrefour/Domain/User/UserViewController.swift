@@ -51,8 +51,12 @@ class UserViewController: UIViewController {
     
     private func setupBind() {
         
-        viewModel.bindUser = { [weak self] user in
-            self?.mainView.bind(user: user)
+        viewModel.bindUserName = { [weak self] name in
+            self?.mainView.bindUserName(name: name)
+        }
+        
+        viewModel.bindUserImage = { [weak self] image in
+            self?.mainView.bindUserImage(imageURL: image)
         }
         
         viewModel.showLoading = { [weak self] in

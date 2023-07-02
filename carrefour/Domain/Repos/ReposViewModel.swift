@@ -12,7 +12,7 @@ protocol ReposViewModelProtocol {
     var showLoading: (() -> ())? { get set }
     var hideLoading: (() -> ())? { get set }
     var showMessage: ((String) -> ())? { get set }
-    var bindRepos: (([Repo]) -> ())? { get set }
+    var bindRepos: (() -> ())? { get set }
     func fetchRepos()
 }
 
@@ -23,15 +23,13 @@ final class ReposViewModel: NSObject, ReposViewModelProtocol {
     var showLoading: (() -> ())?
     var hideLoading: (() -> ())?
     var showMessage: ((String) -> ())?
-    var bindRepos: (([Repo]) -> ())?
+    var bindRepos: (() -> ())?
     
     private var username: String
     
     private var repos:[Repo]? {
         didSet {
-            if let repos = repos {
-                bindRepos?(repos)
-            }
+            bindRepos?()
         }
     }
     
