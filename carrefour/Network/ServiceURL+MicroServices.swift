@@ -11,13 +11,8 @@ struct ServiceURL {
     
     struct MicroServices {
         
-        static var domain: String {
-            switch Networking.environment {
-            case .prd: return "https://api.github.com/"
-            case .stg: return "https://api.github.com/"
-            case .dev: return "https://api.github.com/"
-            }
-        }
+        static var domain: String = "https://api.github.com/"
+        
     }
 }
 

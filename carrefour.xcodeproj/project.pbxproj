@@ -26,7 +26,6 @@
 		FEC7DDBB2A4D18CD003371D8 /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDBA2A4D18CD003371D8 /* License.swift */; };
 		FEC7DDBD2A4D1A43003371D8 /* ServiceURL+MicroServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDBC2A4D1A43003371D8 /* ServiceURL+MicroServices.swift */; };
 		FEC7DDBF2A4D1A69003371D8 /* NetworkingClient+MicroServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDBE2A4D1A69003371D8 /* NetworkingClient+MicroServices.swift */; };
-		FEC7DDC12A4D1AFE003371D8 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDC02A4D1AFE003371D8 /* Networking.swift */; };
 		FEC7DDC32A4D260F003371D8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDC22A4D260F003371D8 /* HomeView.swift */; };
 		FEC7DDC62A4D288C003371D8 /* CGFloat+AppTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDC52A4D288C003371D8 /* CGFloat+AppTokens.swift */; };
 		FEC7DDC82A4D2916003371D8 /* AppTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDC72A4D2916003371D8 /* AppTokens.swift */; };
@@ -49,6 +48,7 @@
 		FEC7DDFC2A505B21003371D8 /* AppMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDFB2A505B21003371D8 /* AppMutableAttributedString.swift */; };
 		FEC7DDFE2A505D14003371D8 /* UserParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDFD2A505D14003371D8 /* UserParam.swift */; };
 		FEC7DE002A51A7D2003371D8 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDFF2A51A7D2003371D8 /* AppCoordinator.swift */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		FEC7DD8A2A4CF4C6003371D8 /* PBXContainerItemProxy */ = {
@@ -97,7 +97,6 @@
 		FEC7DDBA2A4D18CD003371D8 /* License.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
 		FEC7DDBC2A4D1A43003371D8 /* ServiceURL+MicroServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ServiceURL+MicroServices.swift"; sourceTree = "<group>"; };
 		FEC7DDBE2A4D1A69003371D8 /* NetworkingClient+MicroServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkingClient+MicroServices.swift"; sourceTree = "<group>"; };
-		FEC7DDC02A4D1AFE003371D8 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		FEC7DDC22A4D260F003371D8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FEC7DDC52A4D288C003371D8 /* CGFloat+AppTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+AppTokens.swift"; sourceTree = "<group>"; };
 		FEC7DDC72A4D2916003371D8 /* AppTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTokens.swift; sourceTree = "<group>"; };
@@ -120,6 +119,7 @@
 		FEC7DDFB2A505B21003371D8 /* AppMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMutableAttributedString.swift; sourceTree = "<group>"; };
 		FEC7DDFD2A505D14003371D8 /* UserParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserParam.swift; sourceTree = "<group>"; };
 		FEC7DDFF2A51A7D2003371D8 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FEC7DD702A4CF4C4003371D8 /* Frameworks */ = {
@@ -248,7 +248,6 @@
 		FEC7DDA72A4CF5FC003371D8 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				FEC7DDC02A4D1AFE003371D8 /* Networking.swift */,
 				FEC7DDBC2A4D1A43003371D8 /* ServiceURL+MicroServices.swift */,
 				FEC7DDBE2A4D1A69003371D8 /* NetworkingClient+MicroServices.swift */,
 			);
@@ -598,7 +597,6 @@
 				FEC7DDF32A4F6F36003371D8 /* ReposViewController.swift in Sources */,
 				FEC7DDE02A4F113D003371D8 /* UIColor+AppTokens.swift in Sources */,
 				FEC7DDF12A4F5D00003371D8 /* UserView.swift in Sources */,
-				FEC7DDC12A4D1AFE003371D8 /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
