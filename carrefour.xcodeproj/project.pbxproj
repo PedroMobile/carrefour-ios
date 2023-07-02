@@ -49,7 +49,6 @@
 		FEC7DDFC2A505B21003371D8 /* AppMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDFB2A505B21003371D8 /* AppMutableAttributedString.swift */; };
 		FEC7DDFE2A505D14003371D8 /* UserParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDFD2A505D14003371D8 /* UserParam.swift */; };
 		FEC7DE002A51A7D2003371D8 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDFF2A51A7D2003371D8 /* AppCoordinator.swift */; };
-/* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		FEC7DD8A2A4CF4C6003371D8 /* PBXContainerItemProxy */ = {
@@ -121,7 +120,6 @@
 		FEC7DDFB2A505B21003371D8 /* AppMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMutableAttributedString.swift; sourceTree = "<group>"; };
 		FEC7DDFD2A505D14003371D8 /* UserParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserParam.swift; sourceTree = "<group>"; };
 		FEC7DDFF2A51A7D2003371D8 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FEC7DD702A4CF4C4003371D8 /* Frameworks */ = {
