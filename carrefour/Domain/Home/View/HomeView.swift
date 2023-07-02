@@ -7,13 +7,9 @@
 
 import UIKit
 
-protocol HomeViewDelegate {
-    func textFieldDidChange(text: String)
-}
-
 class HomeView: UIView, ViewCode {
     
-    var delegate: HomeViewDelegate?
+    var searchTextFieldDidChange: ((String) -> ())?
     
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView()
@@ -102,7 +98,7 @@ class HomeView: UIView, ViewCode {
     
     @objc private func textFieldDidChange() {
         if let text = searchBarTextField.text {
-            delegate?.textFieldDidChange(text: text.trimmingCharacters(in: .whitespaces))
+            searchTextFieldDidChange?( text.trimmingCharacters(in: .whitespaces) )
         }
     }
     

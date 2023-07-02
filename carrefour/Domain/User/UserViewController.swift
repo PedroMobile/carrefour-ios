@@ -16,7 +16,6 @@ class UserViewController: UIViewController {
     
     private lazy var mainView: UserView = {
         let view = UserView(frame: self.view.frame)
-        view.delegate = self
         view.tableView.dataSource = viewModel
         view.setupView()
         return view
@@ -72,14 +71,9 @@ class UserViewController: UIViewController {
             self?.mainView.tableView.reloadData()
         }
         
+        mainView.goToReposPage = { [weak self] in
+            self?.viewModel.goToReposPage()
+        }
     }
 
-}
-
-extension UserViewController: UserViewDelegate {
-    func goToRepos() {
-        let viewModel = ReposViewModel(username: viewModel.username)
-        let viewController = ReposViewController(viewModel: viewModel)
-        navigationController?.pushViewController(viewController, animated: true)
-    }
 }

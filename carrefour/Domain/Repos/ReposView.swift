@@ -9,8 +9,6 @@ import UIKit
 
 class ReposView: UIView, ViewCode {
     
-    var delegate: HomeViewDelegate?
-    
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
         tableView.separatorStyle = .singleLine

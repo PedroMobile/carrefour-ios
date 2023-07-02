@@ -7,13 +7,9 @@
 
 import UIKit
 
-protocol UserViewDelegate {
-    func goToRepos() 
-}
-
 class UserView: UIView, ViewCode {
     
-    var delegate: UserViewDelegate?
+    var goToReposPage: (() -> ())?
     
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView()
@@ -150,6 +146,6 @@ class UserView: UIView, ViewCode {
     }
     
     @objc func goToRepos() {
-        delegate?.goToRepos()
+        goToReposPage?()
     }
 }

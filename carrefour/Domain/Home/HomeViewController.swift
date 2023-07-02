@@ -18,7 +18,6 @@ final class HomeViewController: UIViewController {
         let view = HomeView(frame: self.view.frame)
         view.tableView.delegate = self
         view.tableView.dataSource = viewModel
-        view.delegate = self
         view.setupView()
         return view
     }()
@@ -69,8 +68,10 @@ final class HomeViewController: UIViewController {
             Toast(text: message).show()
         }
         
+        mainView.searchTextFieldDidChange = { [weak self] text in
+            self?.viewModel.searchUser(login: text)
+        }
     }
-
 }
 
 extension HomeViewController: UITableViewDelegate {
@@ -79,16 +80,6 @@ extension HomeViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let username = viewModel.users?[indexPath.row].login {
-            let viewModel = UserViewModel(username: username)
-            let viewController = UserViewController(viewModel: viewModel)
-            navigationController?.pushViewController(viewController, animated: true)
-        }
-    }
-}
-
-extension HomeViewController: HomeViewDelegate {
-    func textFieldDidChange(text: String) {
-        viewModel.searchUser(login: text)
+        viewModel.goToUserPage(row: indexPath.row)
     }
 }

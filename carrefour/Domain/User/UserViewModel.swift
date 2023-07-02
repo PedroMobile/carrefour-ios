@@ -16,6 +16,7 @@ protocol UserViewModelProtocol {
     var bindUser: ((UserInfo) -> ())? { get set }
     var bindUserParams: (() -> ())? { get set }
     func fetchUser()
+    func goToReposPage()
 }
 
 final class UserViewModel: NSObject, UserViewModelProtocol {
@@ -29,6 +30,7 @@ final class UserViewModel: NSObject, UserViewModelProtocol {
     var bindUserParams: (() -> ())?
     
     var username: String
+    weak var coordinator : AppCoordinator?
     
     private var user:UserInfo? {
         didSet {
@@ -83,7 +85,9 @@ final class UserViewModel: NSObject, UserViewModelProtocol {
         return params
     }
     
-    
+    func goToReposPage() {
+        coordinator?.goToReposPage(username: username)
+    }
     
 }
 

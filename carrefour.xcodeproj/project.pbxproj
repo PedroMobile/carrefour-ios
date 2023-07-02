@@ -11,7 +11,6 @@
 		50290B6183BEC6827ABF6975 /* Pods_carrefour_carrefourUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208CA79C4A9707AB7949A5EF /* Pods_carrefour_carrefourUITests.framework */; };
 		74D44A520BBFCD648F967BE4 /* Pods_carrefourTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50DE040ACF32051DBADC6680 /* Pods_carrefourTests.framework */; };
 		FEC7DD772A4CF4C4003371D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DD762A4CF4C4003371D8 /* AppDelegate.swift */; };
-		FEC7DD792A4CF4C4003371D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DD782A4CF4C4003371D8 /* SceneDelegate.swift */; };
 		FEC7DD802A4CF4C6003371D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC7DD7F2A4CF4C6003371D8 /* Assets.xcassets */; };
 		FEC7DD832A4CF4C6003371D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEC7DD812A4CF4C6003371D8 /* LaunchScreen.storyboard */; };
 		FEC7DD8E2A4CF4C6003371D8 /* carrefourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DD8D2A4CF4C6003371D8 /* carrefourTests.swift */; };
@@ -49,6 +48,7 @@
 		FEC7DDF92A4F72A0003371D8 /* AppTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDF82A4F72A0003371D8 /* AppTableViewCell.swift */; };
 		FEC7DDFC2A505B21003371D8 /* AppMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDFB2A505B21003371D8 /* AppMutableAttributedString.swift */; };
 		FEC7DDFE2A505D14003371D8 /* UserParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDFD2A505D14003371D8 /* UserParam.swift */; };
+		FEC7DE002A51A7D2003371D8 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7DDFF2A51A7D2003371D8 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +80,6 @@
 		BA19D048393C8CA662B5831B /* Pods-carrefourTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-carrefourTests.release.xcconfig"; path = "Target Support Files/Pods-carrefourTests/Pods-carrefourTests.release.xcconfig"; sourceTree = "<group>"; };
 		FEC7DD732A4CF4C4003371D8 /* carrefour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carrefour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC7DD762A4CF4C4003371D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FEC7DD782A4CF4C4003371D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FEC7DD7F2A4CF4C6003371D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEC7DD822A4CF4C6003371D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEC7DD842A4CF4C6003371D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -121,6 +120,7 @@
 		FEC7DDF82A4F72A0003371D8 /* AppTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTableViewCell.swift; sourceTree = "<group>"; };
 		FEC7DDFB2A505B21003371D8 /* AppMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMutableAttributedString.swift; sourceTree = "<group>"; };
 		FEC7DDFD2A505D14003371D8 /* UserParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserParam.swift; sourceTree = "<group>"; };
+		FEC7DDFF2A51A7D2003371D8 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,7 +205,7 @@
 				FEC7DDA72A4CF5FC003371D8 /* Network */,
 				FEC7DDA62A4CF5E9003371D8 /* Models */,
 				FEC7DD762A4CF4C4003371D8 /* AppDelegate.swift */,
-				FEC7DD782A4CF4C4003371D8 /* SceneDelegate.swift */,
+				FEC7DDFF2A51A7D2003371D8 /* AppCoordinator.swift */,
 				FEC7DDE12A4F1208003371D8 /* Constants.swift */,
 				FEC7DDE82A4F1455003371D8 /* Localizable.strings */,
 				FEC7DD7F2A4CF4C6003371D8 /* Assets.xcassets */,
@@ -570,6 +570,7 @@
 			files = (
 				FEC7DDF72A4F6F5E003371D8 /* ReposView.swift in Sources */,
 				FEC7DDF92A4F72A0003371D8 /* AppTableViewCell.swift in Sources */,
+				FEC7DE002A51A7D2003371D8 /* AppCoordinator.swift in Sources */,
 				FEC7DDEB2A4F30E6003371D8 /* SearchUser.swift in Sources */,
 				FEC7DDAF2A4D0A9A003371D8 /* HomeViewController.swift in Sources */,
 				FEC7DDB12A4D0BF7003371D8 /* HomeViewModel.swift in Sources */,
@@ -586,7 +587,6 @@
 				FEC7DDDE2A4F108F003371D8 /* AppSearchField.swift in Sources */,
 				FEC7DDBD2A4D1A43003371D8 /* ServiceURL+MicroServices.swift in Sources */,
 				FEC7DDE22A4F1208003371D8 /* Constants.swift in Sources */,
-				FEC7DD792A4CF4C4003371D8 /* SceneDelegate.swift in Sources */,
 				FEC7DDFE2A505D14003371D8 /* UserParam.swift in Sources */,
 				FEC7DDDC2A4ED54F003371D8 /* UserTableViewCell.swift in Sources */,
 				FEC7DDAA2A4CF6A2003371D8 /* ViewCode.swift in Sources */,

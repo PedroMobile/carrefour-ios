@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 
 protocol ReposViewModelProtocol {
-    var username: String { get }
     var showLoading: (() -> ())? { get set }
     var hideLoading: (() -> ())? { get set }
     var showMessage: ((String) -> ())? { get set }
@@ -26,7 +25,7 @@ final class ReposViewModel: NSObject, ReposViewModelProtocol {
     var showMessage: ((String) -> ())?
     var bindRepos: (([Repo]) -> ())?
     
-    var username: String
+    private var username: String
     
     private var repos:[Repo]? {
         didSet {

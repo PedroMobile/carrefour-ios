@@ -17,11 +17,13 @@ protocol HomeViewModelProtocol {
     func fetchUsers()
     func searchUser(login:String)
     var users:[User]? { get }
+    func goToUserPage(row: Int)
 }
 
 final class HomeViewModel: NSObject, HomeViewModelProtocol {
     
     private var service = Service.shared
+    weak var coordinator : AppCoordinator?
     
     var showLoading: (() -> ())?
     var hideLoading: (() -> ())?
@@ -64,6 +66,11 @@ final class HomeViewModel: NSObject, HomeViewModelProtocol {
         })
     }
     
+    func goToUserPage(row: Int) {
+        if let username = users?[row].login {
+            coordinator?.goToUserPage(username: username)
+        }
+    }
 }
 
 extension HomeViewModel: UITableViewDataSource {
@@ -79,5 +86,4 @@ extension HomeViewModel: UITableViewDataSource {
         
         return cell ?? UITableViewCell()
     }
-    
 }
